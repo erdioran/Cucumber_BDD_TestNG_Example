@@ -1,8 +1,11 @@
-package com.erdioran.base;
+package com.erdioran.runner;
 
 import com.aventstack.extentreports.ExtentTest;
+import com.erdioran.base.DriverManager;
 import com.erdioran.utils.ConfigManager;
 import com.erdioran.utils.ExtentTestManager;
+import io.cucumber.testng.AbstractTestNGCucumberTests;
+import io.cucumber.testng.CucumberOptions;
 import org.apache.commons.lang.StringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -13,9 +16,14 @@ import org.testng.annotations.*;
 
 import java.lang.reflect.Method;
 
-public abstract class BaseTest {
+@CucumberOptions(
+        features = "src/test/resources/features/",
+        glue = "com.erdioran.definitions")
 
-    private static final Logger LOGGER = LogManager.getLogger(BaseTest.class);
+public class CucumberRunnerTests extends AbstractTestNGCucumberTests {
+
+
+    private static final Logger LOGGER = LogManager.getLogger(CucumberRunnerTests.class);
 
     @BeforeMethod(alwaysRun = true)
     public void startBrowserAndLogin(Method method, ITestResult result, ITestContext context) {
@@ -51,8 +59,8 @@ public abstract class BaseTest {
         } else {
             context.setAttribute("previousTestStatus", "passed");
         }
-     //   boolean isNewBrowserPerTest = Boolean.parseBoolean(ConfigManager.getConfigProperty("new.browser.per.test"));
-     //   boolean isCleanUpTest = context.getName().contains("Clean");
+        //   boolean isNewBrowserPerTest = Boolean.parseBoolean(ConfigManager.getConfigProperty("new.browser.per.test"));
+        //   boolean isCleanUpTest = context.getName().contains("Clean");
 
         DriverManager.quitDriver();
 

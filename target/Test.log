@@ -1,0 +1,72 @@
+[22:34:41 21-Jul-22] [INFO ] [35m[][m [ExecutionListener.java:13] ==> Start of automated test execution
+[22:34:42 21-Jul-22] [INFO ] [35m[][m [SuiteListener.java:17] ==> Starting test suite [Suite] | XML Suite file : [/Users/erdioran/IdeaProjects/eBay_selenium_automation_cucumber_gherkin_bdd/searchbar.xml]
+[22:34:42 21-Jul-22] [INFO ] [35m[][m [TestListener.java:79] ==> Executing test : [SearchBar Cases] from class [com.erdioran.runner.CucumberRunnerTests]
+[22:34:43 21-Jul-22] [INFO ] [35m[runScenario][m [CucumberRunnerTests.java:31] ==> Executing test method : [runScenario] in class [com.erdioran.runner.CucumberRunnerTests]
+[22:34:43 21-Jul-22] [INFO ] [35m[runScenario][m [ExtentTestManager.java:34] ==> Test Started
+[22:34:43 21-Jul-22] [INFO ] [35m[runScenario][m [CucumberRunnerTests.java:43] ==> Launching fresh browser
+[22:34:52 21-Jul-22] [INFO ] [35m[runScenario][m [SeleniumListener.java:45] ==> Trying to navigate to url : https://www.ebay.com/
+[22:34:54 21-Jul-22] [INFO ] [35m[runScenario][m [SeleniumListener.java:50] ==> Navigated to : https://www.ebay.com/
+[22:34:54 21-Jul-22] [INFO ] [35m[runScenario][m [SearchBarDefinitions.java:25] ==> user is on ebay.com page
+[22:34:54 21-Jul-22] [WARN ] [35m[runScenario][m [RetryAnalyzer.java:22] ==> Test method : [runScenario] is failed due to : io.cucumber.testng.UndefinedStepException: The step 'user enters iphone in searchbar box' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("user enters iphone in searchbar box")
+public void user_enters_iphone_in_searchbar_box() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+
+[22:34:54 21-Jul-22] [WARN ] [35m[runScenario][m [RetryAnalyzer.java:24] ==> Retrying failed test method : [runScenario]
+[22:34:54 21-Jul-22] [WARN ] [35m[runScenario][m [RetryAnalyzer.java:25] ==> Retry count : 1
+[22:34:54 21-Jul-22] [INFO ] [35m[runScenario][m [TestListener.java:58] ==> Skipped test method : [runScenario] in class [com.erdioran.runner.CucumberRunnerTests]. Depending on test method []
+[22:34:54 21-Jul-22] [INFO ] [35m[runScenario][m [CucumberRunnerTests.java:31] ==> Executing test method : [runScenario] in class [com.erdioran.runner.CucumberRunnerTests]
+[22:34:54 21-Jul-22] [INFO ] [35m[runScenario][m [ExtentTestManager.java:34] ==> Test Started
+[22:34:54 21-Jul-22] [INFO ] [35m[runScenario][m [CucumberRunnerTests.java:43] ==> Launching fresh browser
+[22:34:59 21-Jul-22] [INFO ] [35m[runScenario][m [SeleniumListener.java:45] ==> Trying to navigate to url : https://www.ebay.com/
+[22:35:03 21-Jul-22] [INFO ] [35m[runScenario][m [SeleniumListener.java:50] ==> Navigated to : https://www.ebay.com/
+[22:35:03 21-Jul-22] [INFO ] [35m[runScenario][m [SearchBarDefinitions.java:25] ==> user is on ebay.com page
+[22:35:03 21-Jul-22] [INFO ] [35m[runScenario][m [RetryAnalyzer.java:31] ==> [runScenario] didn't pass after [1] retries
+[22:35:03 21-Jul-22] [INFO ] [35m[runScenario][m [TestListener.java:36] ==> Failed test method : [runScenario] in class [com.erdioran.runner.CucumberRunnerTests]
+[22:35:03 21-Jul-22] [ERROR] [35m[runScenario][m [TestListener.java:38] ==> io.cucumber.testng.UndefinedStepException: The step 'user enters iphone in searchbar box' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("user enters iphone in searchbar box")
+public void user_enters_iphone_in_searchbar_box() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
