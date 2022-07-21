@@ -9,6 +9,7 @@ import io.cucumber.java.en.When;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 
 import static com.erdioran.utils.DataManager.getData;
 import static com.erdioran.base.HomePage.*;
@@ -37,12 +38,13 @@ public class SearchBarDefinitions  {
     public void click_search() {
 
         clickSearch();
-        LOGGER.info("hits enter");
+        LOGGER.info("click search");
 
     }
 
-    @Then("user is navigated to search results")
-    public void user_is_navigated_to_search_results() {
+    @Then("user is navigated to (.*) search results")
+    public void user_is_navigated_to_search_results(String resulstText) {
+        Assert.assertTrue(checkSearchResults(resulstText).isDisplayed());
         LOGGER.info("user is navigated to search results");
 
     }

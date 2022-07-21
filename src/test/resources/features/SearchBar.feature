@@ -6,8 +6,8 @@ Feature: Check searchbar functionality
     Given user is on ebay.com page
     When user enters <text> in searchbar box
     And click search
-    Then user is navigated to search results
+    Then user is navigated to <resultText> search results
 
     Examples:
-      | text |
-      | iphone |
+      | text | resultText |
+      | iphone | iPhone |

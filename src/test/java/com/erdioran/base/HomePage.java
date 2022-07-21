@@ -3,12 +3,9 @@ package com.erdioran.base;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
-import org.testng.asserts.SoftAssert;
-
-import java.util.ArrayList;
+import org.openqa.selenium.WebElement;
 
 import static com.erdioran.objectRepository.HomeOR.*;
-import static com.erdioran.utils.DataManager.getData;
 
 public class HomePage extends Page {
 
@@ -21,6 +18,12 @@ public class HomePage extends Page {
 
     public static void clickSearch() {
         click(SEARCH_BAR);
+    }
+
+
+    public static WebElement checkSearchResults(String resultText) {
+       WebElement resultTextElement= DriverManager.getDriver().findElement(By.xpath("//span[normalize-space()='"+resultText+"']"));
+       return resultTextElement;
     }
 
 }
