@@ -1,57 +1,36 @@
 package com.erdioran.base;
 
-import static com.erdioran.utils.DataManager.getData;
-
-import com.erdioran.utils.Helper;
-
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.*;
-import org.openqa.selenium.support.ui.Select;
-import org.testng.Assert;
-import org.testng.asserts.SoftAssert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
-import java.util.ArrayList;
+import static com.erdioran.objectRepository.HomeOR.*;
 
 public class Common extends Page {
 
     private static final Logger LOGGER = LogManager.getLogger(Common.class);
+    static WebDriver driver = DriverManager.getDriver();
 
-
-    public static boolean findUserName() {
-        boolean displayed = DriverManager.getDriver().findElement(By.xpath("//span[normalize-space()='" + getData("signupLogin.name") + " " + getData("signupLogin.surname") + "']")).isDisplayed();
-        return displayed;
+    public static void enterSearchBar(String text) {
+       enterText(SEARCH_BAR, text);
     }
 
-    public static boolean checkCssValue(String value, String name) {
-        boolean displayed=DriverManager.getDriver().findElement(By.cssSelector("input[placeholder='(___) ___ __ __'][value='"+value+"'][name='"+name+"']")).isDisplayed();
-        return displayed;
+    public static void clickSearch() {
+        click(SEARCH_BUTTON);
     }
 
 
-
-    public static ArrayList<String> hTagsCheck(String[] footer_test_pages, String[] footer_h1_tags) {
-        ArrayList<String> wrongPages=new ArrayList<>();
-        for (int i = 0; i < footer_test_pages.length; i++) {
-            click(By.linkText(footer_test_pages[i]));
-
-            try {
-                SoftAssert softAssert = new SoftAssert();
-                softAssert.assertTrue(DriverManager.getDriver().findElement(getH1(footer_h1_tags[i])).isDisplayed());
-            } catch (Exception e) {
-                LOGGER.error("H1 tag doesn't match. Page: " + (footer_test_pages[i]));
-                wrongPages.add(footer_test_pages[i]);
-            }
-          //  scrollIntoView(FOOTER);
-        }
-        return wrongPages;
+    public static WebElement checkSearchResults(String resultText) {
+        return driver.findElement(By.xpath("//span[normalize-space()='"+resultText+"']"));
 
     }
 
-    public static void enterCredentials(String phone, String password) {
-       // enterText(LOGIN_PHONE_NUMBER, phone);
-       // enterText(LOGIN_PASSWORD, password);
+    public static WebElement checkVisiblePopup(String popupId) {
+        return driver.findElement(By.id(popupId));
+
     }
+
 
 }

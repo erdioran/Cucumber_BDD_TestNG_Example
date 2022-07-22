@@ -18,7 +18,8 @@ import java.lang.reflect.Method;
 
 @CucumberOptions(
         features = "src/test/resources/features/",
-        glue = "com.erdioran.definitions")
+        glue = "com.erdioran.definitions",
+        monochrome = true)
 
 public class CucumberRunnerTests extends AbstractTestNGCucumberTests {
 

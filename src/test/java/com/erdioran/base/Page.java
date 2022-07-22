@@ -99,6 +99,11 @@ public class Page {
         findObject(By.linkText(string)).click();
     }
 
+    public static void clickXpath(String string) {
+        findObject(By.xpath(string)).click();
+    }
+
+
     public static void waitForIntervalsAndClick(By by, int interval, int maxWait, boolean useJsToClick) {
         boolean elementFound = false;
         int counter = 0;

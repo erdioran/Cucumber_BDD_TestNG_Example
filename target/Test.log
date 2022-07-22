@@ -1,24 +1,83 @@
-[22:34:41 21-Jul-22] [INFO ] [35m[][m [ExecutionListener.java:13] ==> Start of automated test execution
-[22:34:42 21-Jul-22] [INFO ] [35m[][m [SuiteListener.java:17] ==> Starting test suite [Suite] | XML Suite file : [/Users/erdioran/IdeaProjects/eBay_selenium_automation_cucumber_gherkin_bdd/searchbar.xml]
-[22:34:42 21-Jul-22] [INFO ] [35m[][m [TestListener.java:79] ==> Executing test : [SearchBar Cases] from class [com.erdioran.runner.CucumberRunnerTests]
-[22:34:43 21-Jul-22] [INFO ] [35m[runScenario][m [CucumberRunnerTests.java:31] ==> Executing test method : [runScenario] in class [com.erdioran.runner.CucumberRunnerTests]
-[22:34:43 21-Jul-22] [INFO ] [35m[runScenario][m [ExtentTestManager.java:34] ==> Test Started
-[22:34:43 21-Jul-22] [INFO ] [35m[runScenario][m [CucumberRunnerTests.java:43] ==> Launching fresh browser
-[22:34:52 21-Jul-22] [INFO ] [35m[runScenario][m [SeleniumListener.java:45] ==> Trying to navigate to url : https://www.ebay.com/
-[22:34:54 21-Jul-22] [INFO ] [35m[runScenario][m [SeleniumListener.java:50] ==> Navigated to : https://www.ebay.com/
-[22:34:54 21-Jul-22] [INFO ] [35m[runScenario][m [SearchBarDefinitions.java:25] ==> user is on ebay.com page
-[22:34:54 21-Jul-22] [WARN ] [35m[runScenario][m [RetryAnalyzer.java:22] ==> Test method : [runScenario] is failed due to : io.cucumber.testng.UndefinedStepException: The step 'user enters iphone in searchbar box' is undefined.
-You can implement this step using the snippet(s) below:
-
-@When("user enters iphone in searchbar box")
-public void user_enters_iphone_in_searchbar_box() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+[06:01:34 22-Jul-22] [INFO ] [35m[][m [ExecutionListener.java:13] ==> Start of automated test execution
+[06:01:35 22-Jul-22] [INFO ] [35m[][m [SuiteListener.java:17] ==> Starting test suite [Suite] | XML Suite file : [/Users/erdioran/IdeaProjects/eBay_selenium_automation_cucumber_gherkin_bdd/product_detail.xml]
+[06:01:35 22-Jul-22] [INFO ] [35m[][m [TestListener.java:79] ==> Executing test : [Product Detail Cases] from class [com.erdioran.runner.CucumberRunnerTests]
+[06:01:36 22-Jul-22] [INFO ] [35m[runScenario][m [CucumberRunnerTests.java:32] ==> Executing test method : [runScenario] in class [com.erdioran.runner.CucumberRunnerTests]
+[06:01:36 22-Jul-22] [INFO ] [35m[runScenario][m [ExtentTestManager.java:34] ==> Test Started
+[06:01:36 22-Jul-22] [INFO ] [35m[runScenario][m [CucumberRunnerTests.java:44] ==> Launching fresh browser
+[06:01:45 22-Jul-22] [INFO ] [35m[runScenario][m [SeleniumListener.java:45] ==> Trying to navigate to url : https://www.ebay.com/
+[06:01:48 22-Jul-22] [INFO ] [35m[runScenario][m [SeleniumListener.java:50] ==> Navigated to : https://www.ebay.com/
+[06:01:48 22-Jul-22] [INFO ] [35m[runScenario][m [SearchBarDefinitions.java:27] ==> user is on ebay.com page
+[06:01:48 22-Jul-22] [INFO ] [35m[runScenario][m [Page.java:152] ==> WebElement : [By.id: gh-ac] | Exists
+[06:01:48 22-Jul-22] [INFO ] [35m[runScenario][m [Page.java:154] ==> Actual web element id : [gh-ac]
+[06:01:48 22-Jul-22] [INFO ] [35m[runScenario][m [Page.java:53] ==> Found element [By.id: gh-ac] after waiting for [0] seconds
+[06:01:49 22-Jul-22] [INFO ] [35m[runScenario][m [SeleniumListener.java:113] ==> Text entered : [iphone] | [id: gh-ac]
+[06:01:50 22-Jul-22] [INFO ] [35m[runScenario][m [SearchBarDefinitions.java:34] ==> user enters a text in search box
+[06:01:55 22-Jul-22] [INFO ] [35m[runScenario][m [SeleniumListener.java:100] ==> Clicked : [id: gh-btn] 
+[06:01:56 22-Jul-22] [INFO ] [35m[runScenario][m [SearchBarDefinitions.java:42] ==> click search
+[06:01:56 22-Jul-22] [INFO ] [35m[runScenario][m [Page.java:152] ==> WebElement : [By.xpath: //body[1]/div[5]/div[4]/div[2]/div[1]/div[2]/ul[1]/li[2]/div[1]/div[2]/a[1]/h3[1]] | Exists
+[06:01:56 22-Jul-22] [INFO ] [35m[runScenario][m [Page.java:53] ==> Found element [By.xpath: //body[1]/div[5]/div[4]/div[2]/div[1]/div[2]/ul[1]/li[2]/div[1]/div[2]/a[1]/h3[1]] after waiting for [0] seconds
+[06:02:00 22-Jul-22] [INFO ] [35m[runScenario][m [SeleniumListener.java:100] ==> Clicked : [xpath: //body[1]/div[5]/div[4]/div[2]/div[1]/div[2]/ul[1]/li[2]/div[1]/div[2]/a[1]/h3[1]] 
+[06:02:01 22-Jul-22] [INFO ] [35m[runScenario][m [SeleniumListener.java:136] ==> Trying to switch to window : [CDwindow-563AA306732233FDB974770DE6EEBBC7]
+[06:02:01 22-Jul-22] [INFO ] [35m[runScenario][m [SeleniumListener.java:130] ==> Switched to window : [CDwindow-563AA306732233FDB974770DE6EEBBC7]
+[06:02:02 22-Jul-22] [INFO ] [35m[runScenario][m [SeleniumListener.java:136] ==> Trying to switch to window : [CDwindow-86883B9B04DA5CFA842A305E4EE02004]
+[06:02:02 22-Jul-22] [INFO ] [35m[runScenario][m [SeleniumListener.java:130] ==> Switched to window : [CDwindow-86883B9B04DA5CFA842A305E4EE02004]
+[06:02:05 22-Jul-22] [INFO ] [35m[runScenario][m [ProductDetailDefinitions.java:33] ==> user click a X. product
+[06:02:07 22-Jul-22] [INFO ] [35m[runScenario][m [SeleniumListener.java:100] ==> Clicked : [id: binBtn_btn] 
+[06:02:07 22-Jul-22] [INFO ] [35m[runScenario][m [ProductDetailDefinitions.java:41] ==> click buy it button
+[06:02:07 22-Jul-22] [INFO ] [35m[runScenario][m [ProductDetailDefinitions.java:49] ==> sea popup check
+[06:02:07 22-Jul-22] [INFO ] [35m[runScenario][m [TestListener.java:30] ==> Passed test method : [runScenario] in class [com.erdioran.runner.CucumberRunnerTests]
+[06:02:08 22-Jul-22] [INFO ] [35m[runScenario][m [CucumberRunnerTests.java:32] ==> Executing test method : [runScenario] in class [com.erdioran.runner.CucumberRunnerTests]
+[06:02:08 22-Jul-22] [INFO ] [35m[runScenario][m [ExtentTestManager.java:34] ==> Test Started
+[06:02:08 22-Jul-22] [INFO ] [35m[runScenario][m [CucumberRunnerTests.java:47] ==> Skip log in
+[06:02:08 22-Jul-22] [INFO ] [35m[runScenario][m [SeleniumListener.java:45] ==> Trying to navigate to url : https://www.ebay.com/
+[06:02:08 22-Jul-22] [WARN ] [35m[runScenario][m [RetryAnalyzer.java:22] ==> Test method : [runScenario] is failed due to : java.lang.RuntimeException: org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'Pinar-MacBook-Air.local', ip: 'fe80:0:0:0:9b:3947:767c:cade%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.4', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=https://www.ebay.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: /var/folders/br/7j6wsnx13hx...}, goog:chromeOptions: {debuggerAddress: localhost:51842}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51842/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+	at com.erdioran.listener.SeleniumListener.onException(SeleniumListener.java:142)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:94)
+	at jdk.proxy2/jdk.proxy2.$Proxy41.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:117)
+	at jdk.proxy2/jdk.proxy2.$Proxy42.get(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:175)
+	at com.erdioran.definitions.SearchBarDefinitions.user_is_on_ebay_home_page(SearchBarDefinitions.java:26)
+	at ✽.user is on ebay.com page(file:///Users/erdioran/IdeaProjects/eBay_selenium_automation_cucumber_gherkin_bdd/src/test/resources/features/SearchBar.feature:6)
+Caused by: org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'Pinar-MacBook-Air.local', ip: 'fe80:0:0:0:9b:3947:767c:cade%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.4', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, get {url=https://www.ebay.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: /var/folders/br/7j6wsnx13hx...}, goog:chromeOptions: {debuggerAddress: localhost:51842}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51842/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:312)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:115)
+	at jdk.proxy2/jdk.proxy2.$Proxy42.get(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:175)
+	at com.erdioran.definitions.SearchBarDefinitions.user_is_on_ebay_home_page(SearchBarDefinitions.java:26)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
 	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
 	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
 	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
@@ -50,23 +109,163 @@ public void user_enters_iphone_in_searchbar_box() {
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 
-[22:34:54 21-Jul-22] [WARN ] [35m[runScenario][m [RetryAnalyzer.java:24] ==> Retrying failed test method : [runScenario]
-[22:34:54 21-Jul-22] [WARN ] [35m[runScenario][m [RetryAnalyzer.java:25] ==> Retry count : 1
-[22:34:54 21-Jul-22] [INFO ] [35m[runScenario][m [TestListener.java:58] ==> Skipped test method : [runScenario] in class [com.erdioran.runner.CucumberRunnerTests]. Depending on test method []
-[22:34:54 21-Jul-22] [INFO ] [35m[runScenario][m [CucumberRunnerTests.java:31] ==> Executing test method : [runScenario] in class [com.erdioran.runner.CucumberRunnerTests]
-[22:34:54 21-Jul-22] [INFO ] [35m[runScenario][m [ExtentTestManager.java:34] ==> Test Started
-[22:34:54 21-Jul-22] [INFO ] [35m[runScenario][m [CucumberRunnerTests.java:43] ==> Launching fresh browser
-[22:34:59 21-Jul-22] [INFO ] [35m[runScenario][m [SeleniumListener.java:45] ==> Trying to navigate to url : https://www.ebay.com/
-[22:35:03 21-Jul-22] [INFO ] [35m[runScenario][m [SeleniumListener.java:50] ==> Navigated to : https://www.ebay.com/
-[22:35:03 21-Jul-22] [INFO ] [35m[runScenario][m [SearchBarDefinitions.java:25] ==> user is on ebay.com page
-[22:35:03 21-Jul-22] [INFO ] [35m[runScenario][m [RetryAnalyzer.java:31] ==> [runScenario] didn't pass after [1] retries
-[22:35:03 21-Jul-22] [INFO ] [35m[runScenario][m [TestListener.java:36] ==> Failed test method : [runScenario] in class [com.erdioran.runner.CucumberRunnerTests]
-[22:35:03 21-Jul-22] [ERROR] [35m[runScenario][m [TestListener.java:38] ==> io.cucumber.testng.UndefinedStepException: The step 'user enters iphone in searchbar box' is undefined.
-You can implement this step using the snippet(s) below:
+[06:02:08 22-Jul-22] [WARN ] [35m[runScenario][m [RetryAnalyzer.java:24] ==> Retrying failed test method : [runScenario]
+[06:02:08 22-Jul-22] [WARN ] [35m[runScenario][m [RetryAnalyzer.java:25] ==> Retry count : 1
+[06:02:08 22-Jul-22] [INFO ] [35m[runScenario][m [TestListener.java:58] ==> Skipped test method : [runScenario] in class [com.erdioran.runner.CucumberRunnerTests]. Depending on test method []
+[06:02:08 22-Jul-22] [INFO ] [35m[runScenario][m [CucumberRunnerTests.java:32] ==> Executing test method : [runScenario] in class [com.erdioran.runner.CucumberRunnerTests]
+[06:02:08 22-Jul-22] [INFO ] [35m[runScenario][m [ExtentTestManager.java:34] ==> Test Started
+[06:02:08 22-Jul-22] [INFO ] [35m[runScenario][m [CucumberRunnerTests.java:44] ==> Launching fresh browser
+[06:02:11 22-Jul-22] [INFO ] [35m[runScenario][m [SeleniumListener.java:45] ==> Trying to navigate to url : https://www.ebay.com/
+[06:02:14 22-Jul-22] [INFO ] [35m[runScenario][m [SeleniumListener.java:50] ==> Navigated to : https://www.ebay.com/
+[06:02:14 22-Jul-22] [INFO ] [35m[runScenario][m [SearchBarDefinitions.java:27] ==> user is on ebay.com page
+[06:02:14 22-Jul-22] [INFO ] [35m[runScenario][m [Page.java:152] ==> WebElement : [By.id: gh-ac] | Exists
+[06:02:14 22-Jul-22] [INFO ] [35m[runScenario][m [Page.java:154] ==> Actual web element id : [gh-ac]
+[06:02:14 22-Jul-22] [INFO ] [35m[runScenario][m [Page.java:53] ==> Found element [By.id: gh-ac] after waiting for [0] seconds
+[06:02:15 22-Jul-22] [INFO ] [35m[runScenario][m [SeleniumListener.java:113] ==> Text entered : [iphone] | [id: gh-ac]
+[06:02:16 22-Jul-22] [INFO ] [35m[runScenario][m [SearchBarDefinitions.java:34] ==> user enters a text in search box
+[06:02:20 22-Jul-22] [INFO ] [35m[runScenario][m [SeleniumListener.java:100] ==> Clicked : [id: gh-btn] 
+[06:02:21 22-Jul-22] [INFO ] [35m[runScenario][m [SearchBarDefinitions.java:42] ==> click search
+[06:02:21 22-Jul-22] [INFO ] [35m[runScenario][m [RetryAnalyzer.java:31] ==> [runScenario] didn't pass after [1] retries
+[06:02:21 22-Jul-22] [INFO ] [35m[runScenario][m [TestListener.java:36] ==> Failed test method : [runScenario] in class [com.erdioran.runner.CucumberRunnerTests]
+[06:02:21 22-Jul-22] [ERROR] [35m[runScenario][m [TestListener.java:38] ==> java.lang.RuntimeException: org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'Pinar-MacBook-Air.local', ip: 'fe80:0:0:0:9b:3947:767c:cade%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.4', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {using=xpath, value=//span[normalize-space()='iphone']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: /var/folders/br/7j6wsnx13hx...}, goog:chromeOptions: {debuggerAddress: localhost:51842}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51842/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+[06:02:24 22-Jul-22] [INFO ] [35m[runScenario][m [CucumberRunnerTests.java:32] ==> Executing test method : [runScenario] in class [com.erdioran.runner.CucumberRunnerTests]
+[06:02:24 22-Jul-22] [INFO ] [35m[runScenario][m [ExtentTestManager.java:34] ==> Test Started
+[06:02:24 22-Jul-22] [INFO ] [35m[runScenario][m [CucumberRunnerTests.java:44] ==> Launching fresh browser
+[06:02:28 22-Jul-22] [INFO ] [35m[runScenario][m [SeleniumListener.java:45] ==> Trying to navigate to url : https://www.ebay.com/
+[06:02:30 22-Jul-22] [INFO ] [35m[runScenario][m [SeleniumListener.java:50] ==> Navigated to : https://www.ebay.com/
+[06:02:30 22-Jul-22] [INFO ] [35m[runScenario][m [SearchBarDefinitions.java:27] ==> user is on ebay.com page
+[06:02:30 22-Jul-22] [INFO ] [35m[runScenario][m [Page.java:152] ==> WebElement : [By.id: gh-ac] | Exists
+[06:02:30 22-Jul-22] [INFO ] [35m[runScenario][m [Page.java:154] ==> Actual web element id : [gh-ac]
+[06:02:30 22-Jul-22] [INFO ] [35m[runScenario][m [Page.java:53] ==> Found element [By.id: gh-ac] after waiting for [0] seconds
+[06:02:31 22-Jul-22] [INFO ] [35m[runScenario][m [SeleniumListener.java:113] ==> Text entered : [samsung] | [id: gh-ac]
+[06:02:32 22-Jul-22] [INFO ] [35m[runScenario][m [SearchBarDefinitions.java:34] ==> user enters a text in search box
+[06:02:36 22-Jul-22] [INFO ] [35m[runScenario][m [SeleniumListener.java:100] ==> Clicked : [id: gh-btn] 
+[06:02:36 22-Jul-22] [INFO ] [35m[runScenario][m [SearchBarDefinitions.java:42] ==> click search
+[06:02:36 22-Jul-22] [WARN ] [35m[runScenario][m [RetryAnalyzer.java:22] ==> Test method : [runScenario] is failed due to : java.lang.RuntimeException: org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'Pinar-MacBook-Air.local', ip: 'fe80:0:0:0:9b:3947:767c:cade%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.4', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {using=xpath, value=//span[normalize-space()='samsung']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: /var/folders/br/7j6wsnx13hx...}, goog:chromeOptions: {debuggerAddress: localhost:51842}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51842/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+	at com.erdioran.listener.SeleniumListener.onException(SeleniumListener.java:142)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:94)
+	at jdk.proxy2/jdk.proxy2.$Proxy41.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:117)
+	at jdk.proxy2/jdk.proxy2.$Proxy42.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:204)
+	at com.erdioran.base.Common.checkSearchResults(Common.java:26)
+	at com.erdioran.definitions.SearchBarDefinitions.user_is_navigated_to_search_results(SearchBarDefinitions.java:48)
+	at ✽.user is navigated to "samsung" search results(file:///Users/erdioran/IdeaProjects/eBay_selenium_automation_cucumber_gherkin_bdd/src/test/resources/features/SearchBar.feature:9)
+Caused by: org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'Pinar-MacBook-Air.local', ip: 'fe80:0:0:0:9b:3947:767c:cade%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.4', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {using=xpath, value=//span[normalize-space()='samsung']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: /var/folders/br/7j6wsnx13hx...}, goog:chromeOptions: {debuggerAddress: localhost:51842}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51842/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:115)
+	at jdk.proxy2/jdk.proxy2.$Proxy42.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:204)
+	at com.erdioran.base.Common.checkSearchResults(Common.java:26)
+	at com.erdioran.definitions.SearchBarDefinitions.user_is_navigated_to_search_results(SearchBarDefinitions.java:48)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 
-@When("user enters iphone in searchbar box")
-public void user_enters_iphone_in_searchbar_box() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
+[06:02:36 22-Jul-22] [WARN ] [35m[runScenario][m [RetryAnalyzer.java:24] ==> Retrying failed test method : [runScenario]
+[06:02:36 22-Jul-22] [WARN ] [35m[runScenario][m [RetryAnalyzer.java:25] ==> Retry count : 1
+[06:02:36 22-Jul-22] [INFO ] [35m[runScenario][m [TestListener.java:58] ==> Skipped test method : [runScenario] in class [com.erdioran.runner.CucumberRunnerTests]. Depending on test method []
+[06:02:37 22-Jul-22] [INFO ] [35m[runScenario][m [CucumberRunnerTests.java:32] ==> Executing test method : [runScenario] in class [com.erdioran.runner.CucumberRunnerTests]
+[06:02:37 22-Jul-22] [INFO ] [35m[runScenario][m [ExtentTestManager.java:34] ==> Test Started
+[06:02:37 22-Jul-22] [INFO ] [35m[runScenario][m [CucumberRunnerTests.java:44] ==> Launching fresh browser
+[06:02:40 22-Jul-22] [INFO ] [35m[runScenario][m [SeleniumListener.java:45] ==> Trying to navigate to url : https://www.ebay.com/
+[06:02:43 22-Jul-22] [INFO ] [35m[runScenario][m [SeleniumListener.java:50] ==> Navigated to : https://www.ebay.com/
+[06:02:43 22-Jul-22] [INFO ] [35m[runScenario][m [SearchBarDefinitions.java:27] ==> user is on ebay.com page
+[06:02:43 22-Jul-22] [INFO ] [35m[runScenario][m [Page.java:152] ==> WebElement : [By.id: gh-ac] | Exists
+[06:02:44 22-Jul-22] [INFO ] [35m[runScenario][m [Page.java:154] ==> Actual web element id : [gh-ac]
+[06:02:44 22-Jul-22] [INFO ] [35m[runScenario][m [Page.java:53] ==> Found element [By.id: gh-ac] after waiting for [0] seconds
+[06:02:45 22-Jul-22] [INFO ] [35m[runScenario][m [SeleniumListener.java:113] ==> Text entered : [samsung] | [id: gh-ac]
+[06:02:45 22-Jul-22] [INFO ] [35m[runScenario][m [SearchBarDefinitions.java:34] ==> user enters a text in search box
+[06:02:51 22-Jul-22] [INFO ] [35m[runScenario][m [SeleniumListener.java:100] ==> Clicked : [id: gh-btn] 
+[06:02:52 22-Jul-22] [INFO ] [35m[runScenario][m [SearchBarDefinitions.java:42] ==> click search
+[06:02:52 22-Jul-22] [INFO ] [35m[runScenario][m [RetryAnalyzer.java:31] ==> [runScenario] didn't pass after [1] retries
+[06:02:52 22-Jul-22] [INFO ] [35m[runScenario][m [TestListener.java:36] ==> Failed test method : [runScenario] in class [com.erdioran.runner.CucumberRunnerTests]
+[06:02:52 22-Jul-22] [ERROR] [35m[runScenario][m [TestListener.java:38] ==> java.lang.RuntimeException: org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'Pinar-MacBook-Air.local', ip: 'fe80:0:0:0:9b:3947:767c:cade%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.4', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {using=xpath, value=//span[normalize-space()='samsung']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: /var/folders/br/7j6wsnx13hx...}, goog:chromeOptions: {debuggerAddress: localhost:51842}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51842/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+[06:02:53 22-Jul-22] [INFO ] [35m[runScenario][m [CucumberRunnerTests.java:32] ==> Executing test method : [runScenario] in class [com.erdioran.runner.CucumberRunnerTests]
+[06:02:53 22-Jul-22] [INFO ] [35m[runScenario][m [ExtentTestManager.java:34] ==> Test Started
+[06:02:53 22-Jul-22] [INFO ] [35m[runScenario][m [CucumberRunnerTests.java:44] ==> Launching fresh browser
+[06:02:56 22-Jul-22] [INFO ] [35m[runScenario][m [SeleniumListener.java:45] ==> Trying to navigate to url : https://www.ebay.com/
+[06:02:57 22-Jul-22] [INFO ] [35m[runScenario][m [SeleniumListener.java:50] ==> Navigated to : https://www.ebay.com/
+[06:02:57 22-Jul-22] [INFO ] [35m[runScenario][m [SearchBarDefinitions.java:27] ==> user is on ebay.com page
+[06:02:57 22-Jul-22] [INFO ] [35m[runScenario][m [Page.java:57] ==> Trying to find element [By.id: gh-ac] | Attempt [0]
+[06:02:58 22-Jul-22] [INFO ] [35m[runScenario][m [Page.java:57] ==> Trying to find element [By.id: gh-ac] | Attempt [1]
+[06:03:00 22-Jul-22] [INFO ] [35m[runScenario][m [Page.java:57] ==> Trying to find element [By.id: gh-ac] | Attempt [2]
+[06:03:01 22-Jul-22] [INFO ] [35m[runScenario][m [Page.java:57] ==> Trying to find element [By.id: gh-ac] | Attempt [3]
+[06:03:02 22-Jul-22] [INFO ] [35m[runScenario][m [Page.java:57] ==> Trying to find element [By.id: gh-ac] | Attempt [4]
+[06:03:03 22-Jul-22] [INFO ] [35m[runScenario][m [Page.java:57] ==> Trying to find element [By.id: gh-ac] | Attempt [5]
+[06:03:04 22-Jul-22] [INFO ] [35m[runScenario][m [Page.java:57] ==> Trying to find element [By.id: gh-ac] | Attempt [6]
+[06:03:05 22-Jul-22] [INFO ] [35m[runScenario][m [Page.java:57] ==> Trying to find element [By.id: gh-ac] | Attempt [7]
+[06:03:06 22-Jul-22] [INFO ] [35m[runScenario][m [Page.java:57] ==> Trying to find element [By.id: gh-ac] | Attempt [8]
