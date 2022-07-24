@@ -50,4 +50,17 @@ public class ProductDetailDefinitions {
 
     }
 
+    @And("{string} pieces of order")
+    public void x_pieces_of_order(String pieces) {
+        enterPiecesOfOrder(pieces);
+        LOGGER.info("pieces of order");
+
+    }
+    @Then("sea quantity error")
+    public void sea_quantity_error() {
+        Assert.assertTrue(checkVisibleError(QUANTITY_ERROR).isDisplayed());
+        LOGGER.info("sea popup check");
+
+    }
+
 }

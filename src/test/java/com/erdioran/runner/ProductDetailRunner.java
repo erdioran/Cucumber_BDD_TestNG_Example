@@ -12,22 +12,27 @@ import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.ThreadContext;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 
 import java.lang.reflect.Method;
 
 @CucumberOptions(
-        features = "src/test/resources/features/",
+        features = "src/test/resources/features/productdetail.feature",
         glue = "com.erdioran.definitions",
         monochrome = true)
 
-public class CucumberRunnerTests extends AbstractTestNGCucumberTests {
+public class ProductDetailRunner extends AbstractTestNGCucumberTests {
 
 
-    private static final Logger LOGGER = LogManager.getLogger(CucumberRunnerTests.class);
+    private static final Logger LOGGER = LogManager.getLogger(ProductDetailRunner.class);
 
-    @BeforeMethod(alwaysRun = true)
+
+    @BeforeTest(alwaysRun = true)
     public void startBrowserAndLogin(Method method, ITestResult result, ITestContext context) {
+
         ThreadContext.put("testName", method.getName());
         LOGGER.info("Executing test method : [{}] in class [{}]", result.getMethod().getMethodName(),
                 result.getTestClass().getName());
@@ -53,7 +58,7 @@ public class CucumberRunnerTests extends AbstractTestNGCucumberTests {
         }
     }
 
-    @AfterMethod(alwaysRun = true)
+    @AfterTest(alwaysRun = true)
     public void CloseBrowser(ITestResult result, ITestContext context) {
         if (!result.isSuccess()) {
             context.setAttribute("previousTestStatus", "failed");
@@ -67,10 +72,6 @@ public class CucumberRunnerTests extends AbstractTestNGCucumberTests {
 
     }
 
-    @AfterTest(alwaysRun = true)
-    public void afterTest() {
-        DriverManager.quitDriver();
-    }
 
     @BeforeSuite(alwaysRun = true)
     public void beforeSuite() {

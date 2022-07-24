@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import static com.erdioran.objectRepository.HomeOR.*;
+import static com.erdioran.objectRepository.ProductDetailOR.*;
 
 public class Common extends Page {
 
@@ -29,6 +30,15 @@ public class Common extends Page {
 
     public static WebElement checkVisiblePopup(String popupId) {
         return driver.findElement(By.id(popupId));
+
+    }
+
+    public static void enterPiecesOfOrder(String pieces) {
+        enterText(PIECES_OF_ORDER, pieces);
+    }
+
+    public static WebElement checkVisibleError(String errorId) {
+        return driver.findElement(By.id(errorId));
 
     }
 

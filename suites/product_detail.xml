@@ -6,9 +6,9 @@
         <listener class-name="com.erdioran.listener.TestListener"/>
         <listener class-name="com.erdioran.listener.AnnotationTransformer"/>
     </listeners>
-    <test name="SearchBar Cases" enabled="true">
+    <test name="Product Detail Cases" enabled="true">
         <classes>
-            <class name="com.erdioran.runner.CucumberRunnerTests">
+            <class name="com.erdioran.runner.ProductDetailRunner">
 
             </class>
         </classes>
